@@ -25,10 +25,9 @@ int main() {
     srand(time(NULL));
     n = sizeof(arr) / sizeof(arr[0]);
 
-    // initialize the array with random numbers
-    for (i = 0; i < n; i++) {
+  /*  for (i = 0; i < n; i++) {
         arr[i] = rand() % 1000;
-    }
+    } */
 
     struct timespec start, end;
     clock_gettime(CLOCK_MONOTONIC, &start); // start the timer
