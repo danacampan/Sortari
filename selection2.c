@@ -27,20 +27,20 @@ int main() {
     srand(time(NULL));
     n = sizeof(arr) / sizeof(arr[0]);
 
-    // initialize the array with random numbers
+    
     for (i = 0; i < n; i++) {
         arr[i] = rand() % 100;
     }
 
     clock_t start = clock(); // start the timer
 
-    // sort the array
+    
     selectionSort(arr, n, &compCount);
 
     clock_t end = clock(); // stop the timer
     double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
 
-    // print the sorted array
+
     printf("Sorted array: \n");
     for (i = 0; i < n; i++) {
         printf("%d ", arr[i]);
